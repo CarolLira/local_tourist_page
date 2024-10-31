@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
     <title>Local Turístico</title>
   </head>
 
@@ -11,9 +21,15 @@
       <section>
         <span>Sua próxima viagem:</span>
         <h1>Conheça Busan</h1>
+
         <div>
-          <img src="assets/busan.jpg" alt="Cidade de Busan na Coreia do Sul" />
-          <p>
+          <img
+            id="busan"
+            class="tourist-places"
+            src="assets/busan.jpg"
+            alt="Cidade de Busan na Coreia do Sul"
+          />
+          <p class="italic center-text">
             Busan, a estrela em ascensão da Coreia do Sul, oferece de tudo,
             desde churrascarias de primeira linha até tradicionais barracas de
             comida de rua. Aqui, exploramos a segunda cidade da Coreia do Sul e
@@ -22,8 +38,10 @@
         </div>
       </section>
 
+      <div id="separator"></div>
+
       <section>
-        <div>
+        <div id="introduction">
           <span>Para os amantes de história</span>
           <h2>Descubra 3 destinos imperdíveis em Busan</h2>
           <p>
@@ -39,8 +57,12 @@
           </p>
         </div>
 
-        <div>
-          <img src="assets/templo-haedong-yonggungsa.jpg" alt="Templo Haedong Yonggungsa" />
+        <div class="places-list">
+          <img
+            class="tourist-places"
+            src="assets/templo-haedong-yonggungsa.jpg"
+            alt="Templo Haedong Yonggungsa"
+          />
           <h3>1. Templo Haedong Yonggungsa</h3>
           <p>
             O Templo Haedong Yonggungsa é um templo budista localizado no
@@ -48,13 +70,18 @@
             templos na Coreia construídos à beira-mar – você pode desfrutar de
             vistas do Mar do Leste de um lado e de belas montanhas do outro. 
           </p>
+          <br />
           <span>Bom para:</span>
           <ul>
-            <li>História</li>
+            <li data-text="historia">História</li>
           </ul>
         </div>
-        <div>
-          <img src="assets/templo-beomeo-sa.jpg" alt="Templo Beomeo-sa" />
+        <div class="places-list">
+          <img
+            class="tourist-places"
+            src="assets/templo-beomeo-sa.jpg"
+            alt="Templo Beomeo-sa"
+          />
           <h3>2. Templo Beomeo-sa</h3>
           <p>
             O Templo Beomeo-sa é um dos maiores santuários da Coreia do Sul. Ele
@@ -62,13 +89,18 @@
             fica distante da agitação da cidade. O Daeungjeon Hall do templo é
             um exemplo bem preservado da arquitetura da Dinastia Joseon.
           </p>
+          <br />
           <span>Bom para:</span>
           <ul>
-            <li>História</li>
+            <li data-text="historia">História</li>
           </ul>
         </div>
-        <div>
-          <img src="assets/parque-yongdusan.jpg" alt="Parque Yongdusan" />
+        <div class="places-list">
+          <img
+            class="tourist-places"
+            src="assets/parque-yongdusan.jpg"
+            alt="Parque Yongdusan"
+          />
           <h3>3. Parque Yongdusan</h3>
           <p>
             O Parque Yongdusan, localizado no centro de Busan, abriga alguns dos
@@ -78,30 +110,31 @@
             no Museum of World Folk Instruments e mais de 80 veleiros coreanos
             no Exhibition Hall of World Model Boats.
           </p>
+          <br />
           <span>Bom para:</span>
           <ul>
-            <li>Casais</li>
-            <li>Famílias</li>
-            <li>Orçamento</li>
+            <li data-text="casais">Casais</li>
+            <li data-text="familias">Famílias</li>
+            <li data-text="orcamento">Orçamento</li>
           </ul>
         </div>
 
-        <div></div>
+        <div id="separator"></div>
 
-        <p>
+        <p class="center-text">
           As melhores coisas para fazer em Busan mostram a reputação da cidade
           como um importante porto marítimo na Ásia. Frequentemente vista como a
           essência da Coreia do Sul, você experimentará uma atmosfera única em
           termos de diversidade étnica e cultural, já que a cidade recebe um
           público cosmopolita o ano todo. 
         </p>
-
-        <footer>
-          Feito com
-          <img src="assets/heart.svg" alt="Coração" />
-          pela Rocketseat
-        </footer>
       </section>
     </main>
+
+    <footer>
+      Feito com
+      <img src="assets/heart.svg" alt="Coração" />
+      pela Rocketseat
+    </footer>
   </body>
 </html>
